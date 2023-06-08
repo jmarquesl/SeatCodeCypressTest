@@ -1,3 +1,4 @@
+import cookiesModalPage from "../support/pages/components/cookiesModalPage";
 import configuratorPage from "../support/pages/configuratorPage"
 
 describe('Configurator', {defaultCommandTimeout: 10000} , () => {
@@ -7,6 +8,7 @@ describe('Configurator', {defaultCommandTimeout: 10000} , () => {
       return false;
     });
     configuratorPage.visit();
+    cookiesModalPage.acceptCookies();
     configuratorPage.selectCar('ARONA');
     configuratorPage.selectFinish();
     configuratorPage.selectDefault();
