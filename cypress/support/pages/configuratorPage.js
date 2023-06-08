@@ -21,10 +21,10 @@ class configuratorPage{
         this.elements.finishSelector().click();
     }
     selectDefault(){
-        this.elements.default().click({force: true});
-        this.elements.default().click({force: true});
-        this.elements.default().click({force: true});
-        this.elements.default().click({force: true});
+        this.elements.default().scrollIntoView().click();
+        this.elements.default().scrollIntoView().click();
+        this.elements.default().scrollIntoView().click();
+        this.elements.default().scrollIntoView().click();
     }
 
     checkDownloadLink(){
